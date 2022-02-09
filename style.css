@@ -1,0 +1,125 @@
+body {
+    background: #E5E5E5;
+    width: 100%;
+}
+header {
+position: absolute;
+width: 375px;
+height: 80px;
+left: 0px;
+top: 0px;
+
+background: #ffffff;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+.icon {
+    width: 40px;
+    position: absolute;
+left: 310px;
+right: 24px;
+top: 24px;
+bottom: 25px;
+background-color: #ffffff;
+}
+.logo {
+    position: absolute;
+    width: 75px;
+    height: 53px;
+    left: 22px;
+    top: 16px;
+    
+    background: url(logo.png);
+}
+/*Configurações do main*/
+
+.mensagensrecebidas1 {
+    position: absolute;
+width: 375px;
+height: 40px;
+left: 0px;
+top: 106px;
+display: flex;
+
+background: #DCDCDC;
+border-radius: 2px;
+}
+.mensagensrecebidas2 {
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    left: 0px;
+    top: 150px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+.mensagensrecebidas3 {
+
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    left: 0px;
+    top: 194px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+.mensagensrecebidas4{
+    position: absolute;
+    width: 375px;
+    height: 63px;
+    left: 0px;
+    top: 238px;
+    display: flex;
+    background: #FFDEDE;
+    border-radius: 2px;
+}
+.mensagensrecebidas5 {
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    left: 0px;
+    top: 305px;
+    display: flex;
+    background: #DCDCDC;
+    border-radius: 2px;
+}
+.edit {
+    margin-right: 5px;
+}
+
+/*configurações do footer*/
+
+footer {
+position: absolute;
+width: 375px;
+height: 80px;
+left: 0px;
+bottom: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+footer input[type=text]{
+    width: 100%;
+    height: 30px;    
+    font-size: 18px;
+    border:none;
+    outline: none;
+    margin-top: 24px;
+}
+
+footer input[type=text]::placeholder{
+    color: #000000;
+    font-style: italic;
+}
+
+.arrow {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left:331px;
+    top: 25px;
+    bottom: 25px;
+    background-color: #ffffff;
+}
