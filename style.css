@@ -88,6 +88,15 @@ border-radius: 2px;
     margin-right: 5px;
 }
 
+.cinza {
+    background: #DCDCDC;
+}
+.branco {
+    background: #FFFFFF;
+}
+.rosa {
+    background: #FFDEDE;
+}
 /*configurações do footer*/
 
 footer {
