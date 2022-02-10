@@ -3,12 +3,35 @@
 
 
 function buscarDados() {  ///Função que vai buscar as mensagens no servidor 
-    const mensagens = axios.get("https://mock-api.driven.com.br/api/v4/uol/messages");
-    mensagens.then(renderizarMensagem);
+    const promises = axios.get("https://mock-api.driven.com.br/api/v4/uol/messages");
+    promises.then(renderizarMensagem);
   }
   
-  function renderizarMensagem(mensagensexibidas) {
-    var elementoMensagem = document.querySelectorAll(".textomensagem");
+  function renderizarMensagem(messages) {
+    const main = document.querySelector(".main") 
+    main.innerHTML = "";
+    for (let i = 0; i < messages.data.length; i++) {
+      main.innerHTML += ` <div class="mensagensrecebidas1">
+      <p class="hora">(${messages.data[i].time})</p>
+      <p class="quemEscreveu">${messages.data[i].from}</p>
+      <p class="textomensagem"> ${messages.data[i].text}</p> 
+    </div>`;}
+    console.log(main)
+   
+  }
+
+  
+///Ideias 
+  /*<div class="container-mensagens edit">
+            <div class="mensagensrecebidas1">
+                <time class="hora"></time>
+                <p class="quemescreveu"></p>
+                <p class="paraQuemEnviou"></p>
+                <p class="textomensagem"></p>
+            </div>
+    }*/
+ 
+    /*  var elementoMensagem = document.querySelectorAll(".textomensagem");
     var elementohora = document.querySelectorAll(".hora");
     var elementoQuemEnviou = document.querySelectorAll(".quemescreveu");
     var elementoParaQuem = document.querySelectorAll(".paraQuemEnviou");
@@ -16,7 +39,7 @@ function buscarDados() {  ///Função que vai buscar as mensagens no servidor
      elementoMensagem.innerHTML = mensagensexibidas.data.text;
      elementohora.innerHTML = mensagensexibidas.data.times
      elementoQuemEnviou.innerHTML = mensagensexibidas.data.from
-     elementoParaQuem.innerHTML - mensagensexibidas.data.to
+     elementoParaQuem.innerHTML - mensagensexibidas.data.to*/
 
     /*///verificação de status para adição ou não da classe cor
     var elementoType = mensagensexibidas.data.status 
@@ -43,5 +66,3 @@ function buscarDados() {  ///Função que vai buscar as mensagens no servidor
     const elementoQueQueroQueApareca = document.querySelector('.mensagensrecebidas1');
     elementoQueQueroQueApareca.scrollIntoView();
 */
-   
-  }

@@ -31,7 +31,9 @@ background-color: #ffffff;
     background: url(logo.png);
 }
 /*Configurações do main*/
-
+main p {
+    font-size: 5px;;
+}
 .mensagensrecebidas1 {
     position: absolute;
 width: 375px;
