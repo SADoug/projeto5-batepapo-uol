@@ -1,16 +1,23 @@
 
+let mensagem = []; // quero do servidor
 
 
-
-function buscarDados() {  ///Função que vai buscar as mensagens no servidor 
-    const promises = axios.get("https://mock-api.driven.com.br/api/v4/uol/messages");
-    promises.then(renderizarMensagem);
+ ///Função que vai buscar as mensagens no servidor 
+    const promise = axios.get("https://mock-api.driven.com.br/api/v4/uol/messages");
+    promise.then(promessaCumprida);
+    console.log("funfa");
+  
+  function promessaCumprida(resposta) {
+    console.log(resposta.data);// receitas do servidor
+    messages = resposta.data;
+    messages.renderizarMensagem;
+    renderizarMensagem(messages);
   }
   
-  function renderizarMensagem(messages) {
+  function renderizarMensagem() {
     const main = document.querySelector(".main") 
-    main.innerHTML = "";
-    for (let i = 0; i < messages.data.length; i++) {
+    main.innerHTML = null;
+    for (let i = 0; i < messages.length; i++) {
       main.innerHTML += ` <div class="mensagensrecebidas1">
       <p class="hora">(${messages.data[i].time})</p>
       <p class="quemEscreveu">${messages.data[i].from}</p>
