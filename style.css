@@ -3,8 +3,8 @@ body {
     width: 100%;
 }
 header {
-position: absolute;
-width: 375px;
+position: fixed;
+width: 100%;
 height: 80px;
 left: 0px;
 top: 0px;
@@ -28,63 +28,57 @@ background-color: #ffffff;
     left: 22px;
     top: 16px;
     
-    background: url(logo.png);
+    
 }
 /*Configurações do main*/
 main p {
-    font-size: 5px;;
+    font-size: 18px;
+    margin-left: 3px;
 }
 .mensagensrecebidas1 {
-    position: absolute;
-width: 375px;
+ 
+width: 100%;
 height: 40px;
 left: 0px;
 top: 106px;
 display: flex;
 
 background: #DCDCDC;
+box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 border-radius: 2px;
 }
 .mensagensrecebidas2 {
-    position: absolute;
-    width: 375px;
+    
+    width: 100%;
     height: 40px;
     left: 0px;
     top: 150px;
     display: flex;
-    background: #FFFFFF;
+    background: #FFDEDE;;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     border-radius: 2px;
 }
 .mensagensrecebidas3 {
 
-    position: absolute;
-    width: 375px;
+    
+    width: 100%;
     height: 40px;
     left: 0px;
     top: 194px;
     display: flex;
     background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     border-radius: 2px;
 }
-.mensagensrecebidas4{
-    position: absolute;
-    width: 375px;
-    height: 63px;
-    left: 0px;
-    top: 238px;
-    display: flex;
-    background: #FFDEDE;
-    border-radius: 2px;
+.hora {
+    color: grey;
 }
-.mensagensrecebidas5 {
-    position: absolute;
-    width: 375px;
-    height: 40px;
-    left: 0px;
-    top: 305px;
-    display: flex;
-    background: #DCDCDC;
-    border-radius: 2px;
+.quemEscreveu {
+color: #000000;
+margin-right: 2px;
+}
+.para {
+
 }
 .edit {
     margin-right: 5px;
@@ -102,8 +96,8 @@ border-radius: 2px;
 /*configurações do footer*/
 
 footer {
-position: absolute;
-width: 375px;
+position: fixed;
+width: 100%;
 height: 80px;
 left: 0px;
 bottom: 0px;
